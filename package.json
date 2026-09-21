@@ -1,0 +1,46 @@
+{
+  "name": "truth-bible-flipbook",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "dev": "vite --config vite.pages.config.ts --host 127.0.0.1 --port 3000",
+    "build": "vite build --config vite.pages.config.ts",
+    "build:static": "vite build --config vite.pages.config.ts",
+    "start": "vite preview --config vite.pages.config.ts --host 127.0.0.1 --port 3000",
+    "lint": "oxlint",
+    "format": "oxfmt",
+    "render:publication": "node scripts/render-publication.mjs"
+  },
+  "dependencies": {
+    "lucide-react": "1.31.0",
+    "page-flip": "2.0.7",
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "react-server-dom-webpack": "19.2.6",
+    "vinext": "1.0.0-beta.5"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "1.37.1",
+    "@cloudflare/workers-types": "4.20260515.1",
+    "@openai/sites-vite-plugin": "0.2.0",
+    "@tailwindcss/postcss": "4.2.1",
+    "@types/node": "22.19.19",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "6.0.2",
+    "@vitejs/plugin-rsc": "0.5.26",
+    "nitro": "3.0.260903-beta",
+    "oxfmt": "0.61.0",
+    "oxlint": "1.76.0",
+    "oxlint-tsgolint": "7.0.2001",
+    "sharp": "0.34.5",
+    "tailwindcss": "4.2.1",
+    "typescript": "5.9.3",
+    "vite": "8.0.13",
+    "wrangler": "4.92.0"
+  },
+  "type": "module"
+}
